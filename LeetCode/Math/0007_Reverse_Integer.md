@@ -11,8 +11,8 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 5, 2026 at 04:28 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/reverse-integer/submissions/2056820474/) |
+| **Submitted** | July 5, 2026 at 04:59 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/reverse-integer/description/) |
 
 ## Solution
 
