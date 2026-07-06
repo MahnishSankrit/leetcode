@@ -1,4 +1,4 @@
-                ans = ans * (i-j);
+                ans = ans * (i-j+1);
             }
                 ans = ans / j;
                 arr.push_back(ans);
