@@ -11,13 +11,13 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 6, 2026 at 11:50 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/pascals-triangle/) |
+| **Submitted** | July 6, 2026 at 11:51 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/pascals-triangle/submissions/2057642171/) |
 
 ## Solution
 
 ```unknown
-                ans = ans * (i-j);
+                ans = ans * (i-j+1);
             }
                 ans = ans / j;
                 arr.push_back(ans);
