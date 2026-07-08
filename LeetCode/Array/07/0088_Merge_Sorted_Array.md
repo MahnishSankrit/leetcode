@@ -11,20 +11,13 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 8, 2026 at 03:36 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/merge-sorted-array/) |
+| **Submitted** | July 8, 2026 at 04:04 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/merge-sorted-array/submissions/2060383522/) |
 
 ## Solution
 
 ```unknown
-class Solution {
-public:
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        int i=0;
-    }
-        int j=0;
-        
-};
+p
 
 ```
 
