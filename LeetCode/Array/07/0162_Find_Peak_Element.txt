@@ -1,0 +1,20 @@
+           long long  left = (mid == 0) ? LLONG_MIN : nums[mid - 1];
+            long long  right = (mid == n - 1) ? LLONG_MIN : nums[mid + 1];
+
+            if(nums[mid] > left && nums[mid]>right){
+                return mid;
+            }else if(nums[mid] < left){
+                high = mid -1;
+        while(low <= high){
+            int mid = low + (high - low)/2;
+
+        // nums[n] = INT_MIN;
+            }else {
+                low = mid + 1;
+            }
+
+        }
+        // nums[-1] =  INT_MIN;
+        int high = n-1;
+        int low = 0;
+
