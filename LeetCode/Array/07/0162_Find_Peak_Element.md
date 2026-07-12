@@ -11,12 +11,24 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 11, 2026 at 08:08 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/find-peak-element/submissions/2063965682/) |
+| **Submitted** | July 12, 2026 at 10:59 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/find-peak-element/submissions/2065276470/) |
 
 ## Solution
 
 ```unknown
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int n=nums.size();
+
+        int low = 0;
+        int high = n-1;
+        // nums[-1] =  INT_MIN;
+        // nums[n] = INT_MIN;
+
+        while(low <= high){
+            int mid = low + (high - low)/2;
            long long  left = (mid == 0) ? LLONG_MIN : nums[mid - 1];
             long long  right = (mid == n - 1) ? LLONG_MIN : nums[mid + 1];
 
@@ -24,21 +36,8 @@
                 return mid;
             }else if(nums[mid] < left){
                 high = mid -1;
-        while(low <= high){
-            int mid = low + (high - low)/2;
-
-        // nums[n] = INT_MIN;
-            }else {
-                low = mid + 1;
-            }
-
-        }
-        // nums[-1] =  INT_MIN;
-        int high = n-1;
-        int low = 0;
-
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-07-11*
+*Auto-synced by LeetCode Git Sync on 2026-07-12*
