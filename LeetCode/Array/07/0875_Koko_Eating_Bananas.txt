@@ -1,0 +1,20 @@
+        while(low <= high){
+
+        int ans= INT_MAX;
+        int high = maxVal;
+        int low = 1;
+
+        // binary search apply
+
+        }
+            maxVal = max(maxVal, piles[i]);
+            int mid = low + (high - low)/2;
+            long long val = ceilFunc(piles, mid);
+
+            if(val <= h){
+                // ans = min(ans, mid);
+                ans = mid;
+                high = mid  -1;
+            }else if(val > h){
+                low = mid + 1;
+            }
