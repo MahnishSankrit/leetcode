@@ -1,0 +1,17 @@
+    sort(arr.begin(), arr.end());
+
+
+    int total = arr.size();
+    int m = total / 2;
+    if(total % 2 == 1){
+        return arr[m];
+
+    }
+
+    return (arr[m] + arr[m-1]) / 2.0;
+
+            return ((double)arr[m] + (double)arr[m-1])/2.0;
+
+
+    }
+};
