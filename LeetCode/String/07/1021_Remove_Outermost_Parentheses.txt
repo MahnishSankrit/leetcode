@@ -1,0 +1,18 @@
+
+        int count = 0;
+        for(auto ch : s){
+            if(ch == '('){
+        }
+                if(count > 0) res += ch;
+            }else{
+                count++;
+                count--;
+            }
+    }
+                if(count>0) res += ch;
+
+        return res;
+};
+        string res = "";
+    string removeOuterParentheses(string s) {
+public:
