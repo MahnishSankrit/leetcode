@@ -11,32 +11,32 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 17, 2026 at 01:02 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/submissions/2070359865/) |
+| **Submitted** | July 17, 2026 at 01:09 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/submissions/2070365006/) |
 
 ## Solution
 
 ```unknown
-            curr = curr->next;
-        while(curr != nullptr){
-            count++;
-        }
-
-        int k =0;
-        curr = head;
-        while(k != count/2){
-            curr = curr->next;
-        }
-        
-
-            k++;
-
-        ListNode * curr = head;
+        ListNode *slow = head;
         int count = 0;
     ListNode* middleNode(ListNode* head) {
 public:
 class Solution {
  */
+ * };
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+        ListNode *fast = head;
+
+        while(fast != nullptr && fast->next != nullptr){
+            slow = slow->next;
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode *next;
+ *     int val;
+            fast = fast->next->next;
+            
+        }
+
 
 ```
 
