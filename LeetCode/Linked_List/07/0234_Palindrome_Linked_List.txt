@@ -1,0 +1,17 @@
+            fast = fast->next->next;
+        }
+
+        slow = rev(slow);
+
+        while(slow){
+            if(temp->val != slow->val) return false;
+
+            temp = temp->next;
+            slow = slow->next;
+        }
+
+    
+        
+        return true;
+    }
+};
