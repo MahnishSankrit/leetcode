@@ -11,32 +11,32 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 22, 2026 at 01:20 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/sort-list/) |
+| **Submitted** | July 22, 2026 at 11:56 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/sort-list/submissions/2077550396/) |
 
 ## Solution
 
 ```unknown
-            for (int j = 0; j < n - 1 - i; j++) {
-                    ListNode* temp = curr->next;
-                    curr->next = temp->next;
-                    temp->next = curr;
-                    }
-                if (curr->val > curr->next->val) {
-                    prev = temp;
-        for (int i = 0; i < n-1; i++) {
-            prev = nullptr;
-                    if (prev == nullptr) {
-                        head = temp;
-                    } else {
-                        prev->next = temp;
+    }
 
-        ListNode* prev = nullptr;
-        curr = head;
+    ListNode* sortList(ListNode* head) {
+       if(head == nullptr || head->next == nullptr) return head;
+            temp = temp->next;
+            rightnode = rightnode->next;
         }
-            curr = curr->next;
-            n++;
-            curr = head;
+
+        return dummy->next;
+            temp->next = rightnode;
+        while(rightnode != nullptr){
+
+        }
+            leftnode = leftnode->next;
+            temp = temp->next;
+            temp->next = leftnode;
+        while(leftnode != nullptr){
+        
+        }
+            temp = temp->next;
 
 ```
 
