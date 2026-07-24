@@ -1,0 +1,12 @@
+        // if(n == 1) return 5;
+
+        long long eve = (n + 1)/2;
+        long long odd = n - eve;
+
+        long long  cal1= binPow(5, eve);
+        long long  cal2 = binPow(4, odd) ;
+
+        long long res = (cal1 * cal2) % MOD;   
+        return (int)res;   
+    }
+};
