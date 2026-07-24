@@ -11,28 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 24, 2026 at 04:47 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/string-to-integer-atoi/submissions/2079497138/) |
+| **Submitted** | July 24, 2026 at 06:38 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/string-to-integer-atoi/submissions/2079594085/) |
 
 ## Solution
 
 ```unknown
-            // Overflow check
-            if (!neg && num > INT_MAX)
-                return INT_MAX;
-
-            if (neg && -num < INT_MIN)
-                return INT_MIN;
-
-            i++;
-        }
-
-        if (neg)
-            return -num;
-
-        return num;
     }
-};
+        return atoiFunc(s, i+1, num, sign);
+
+        if(sign && -num < INT_MIN) return INT_MIN;
+        if(!sign && num > INT_MAX) return INT_MAX;
+
+        
+        num = num * 10 + (s[i] - '0');
+
+        }
+             return num;
+            if(sign) return -num;
+        if(i >= s.length() || !isdigit(s[i])){
+    int atoiFunc(string &s, int i, long long num, bool sign){
+public:
+class Solution {
+    int myAtoi(string s) {
 
 ```
 
