@@ -1,0 +1,16 @@
+            // Overflow check
+            if (!neg && num > INT_MAX)
+                return INT_MAX;
+
+            if (neg && -num < INT_MIN)
+                return INT_MIN;
+
+            i++;
+        }
+
+        if (neg)
+            return -num;
+
+        return num;
+    }
+};
