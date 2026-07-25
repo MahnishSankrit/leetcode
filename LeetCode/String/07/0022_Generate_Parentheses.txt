@@ -1,0 +1,17 @@
+        if(s.length() == 2*n){
+            if(isValid(s)){
+            ans.push_back(s);
+            }
+        }
+        
+    void generate(vector<string> &ans, int n, int i, string s){
+
+        }
+            return;
+            return false;
+            if(st.empty()) return true;
+        s.push_back('(');
+        generate(ans, n, i+1, s);
+    
+        s.pop_back();
+            
