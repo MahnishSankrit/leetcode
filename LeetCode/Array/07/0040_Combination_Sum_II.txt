@@ -1,0 +1,16 @@
+        // if(!arr.empty()){
+            arr.pop_back();
+        // }
+        // if(sum < k){
+            arr.push_back(nums[i]);
+            comb(ans, arr, nums, k, i+1, sum + nums[i]);
+        if(i == nums.size()) return;
+        }
+            return;
+            ans.insert(arr);
+        if(sum == k){
+        // this problem is going to give me the tle 
+public:
+    void comb(set<vector<int>> &ans, vector<int> &arr, vector<int> &nums, int k, int i, int sum){
+class Solution {
+        if(sum > k) return;
