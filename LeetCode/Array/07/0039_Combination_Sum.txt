@@ -1,0 +1,17 @@
+        }
+        
+            comb(ans, arr,nums, k, i, sum+nums[i]);
+            arr.push_back(nums[i]);
+        if(sum < k) {
+
+        if( i == nums.size()) return;
+        // sum = sum-nums[i];
+        if(!arr.empty()){
+            arr.pop_back();
+        }
+        comb(ans, arr, nums, k, i+1, sum);
+        // comb(ans, arr, nums, k, i+1, sum);
+    }
+
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>> ans;
