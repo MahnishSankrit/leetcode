@@ -11,30 +11,30 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 27, 2026 at 11:54 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/combination-sum-ii/) |
+| **Submitted** | July 28, 2026 at 11:28 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/combination-sum-ii/submissions/2085188624/) |
 
 ## Solution
 
 ```unknown
-        // if(!arr.empty()){
-            arr.pop_back();
-        // }
-        // if(sum < k){
-            arr.push_back(nums[i]);
-            comb(ans, arr, nums, k, i+1, sum + nums[i]);
         if(i == nums.size()) return;
-        }
             return;
-            ans.insert(arr);
-        if(sum == k){
-        // this problem is going to give me the tle 
-public:
-    void comb(set<vector<int>> &ans, vector<int> &arr, vector<int> &nums, int k, int i, int sum){
-class Solution {
+        }
+            ans.push_back(arr);
         if(sum > k) return;
+        if(sum == k){
+ 
+    void comb(vector<vector<int>> &ans, vector<int> &arr, vector<int> &nums, int k, int i, int sum){
+
+        for(int j=i; j<nums.size(); j++){
+            if(i < j && nums[j] == nums[j-1]) continue;
+
+            comb(ans, arr, nums, k, j+1, sum+nums[j]);
+            arr.push_back(nums[j]);
+public:
+class Solution {
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-07-27*
+*Auto-synced by LeetCode Git Sync on 2026-07-28*
