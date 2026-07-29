@@ -11,30 +11,30 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | July 30, 2026 at 01:50 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/combination-sum-iii/submissions/2086682044/) |
+| **Submitted** | July 30, 2026 at 01:58 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/combination-sum-iii/submissions/2086686124/) |
 
 ## Solution
 
 ```unknown
+        // comb(ans, arr, k, n, i+1, sum+i);
+        // arr.pop_back();
+        // comb(ans, arr, k, n, i+1, sum);
     }
 
-        arr.push_back(i);
-        comb(ans, arr, k, n, i+1, sum+i);
-        arr.pop_back();
-        comb(ans, arr, k, n, i+1, sum);
+    vector<vector<int>> combinationSum3(int k, int n) {
+        // arr.push_back(i);
+
+        }
+            arr.pop_back();
+            comb(ans, arr, k, n, j+1, sum+j);
+            arr.push_back(j);
+        if(arr.size() > k) return;
+            // if(j > i) continue;
+        for(int j=i; j<=9; j++){
+
         }
             return;
-            ans.push_back(arr);
-        if(sum == n && arr.size() == k){
-        if(arr.size() > k) return;
-        if(i > 10) return;
-    void comb(vector<vector<int>> &ans, vector<int> &arr, int k, int n, int i, int sum){
-public:
-        if(sum > n) return;
-
-    vector<vector<int>> combinationSum3(int k, int n) {
-        vector<vector<int>> ans;
 
 ```
 
