@@ -1,0 +1,17 @@
+
+    int pop() {
+    }
+        swap(q1, q2);
+        }
+            q1.pop();
+            q2.push(q1.front());
+        while (!q1.empty()) {
+        q2.push(x);
+    void push(int x) {
+
+    MyStack() {}
+    queue<int> q2;
+        int val = q1.front();
+        q1.pop();
+
+        return val;
