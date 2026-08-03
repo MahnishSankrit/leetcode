@@ -1,0 +1,17 @@
+            }else{
+                if(st.empty()) {
+                    return false;
+                }else{
+                    if((st.top() == '(' && s[i] == ')') || (st.top() == '[' && s[i] == ']') || (st.top
+                    () == '{' && s[i] == '}') ){
+                        st.pop();
+                st.push(s[i]);
+                    }else{
+                        return false;
+                    }
+                }
+
+            }
+        }
+        return true;
+        if(!st.empty()) return false;
