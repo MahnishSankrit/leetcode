@@ -1,0 +1,17 @@
+        //     int val = st.top();
+        // while(!st.empty()){
+
+            return -1;
+        if (st.empty())
+    int getMin() {
+
+        int val = st.top();
+        return val;
+    }
+            return -1;
+        if (st.empty())
+    int top() {
+
+    }
+        // st.pop();
+        //     mini = min(val, mini);
