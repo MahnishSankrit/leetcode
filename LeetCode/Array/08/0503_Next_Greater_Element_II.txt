@@ -1,0 +1,13 @@
+                if (st.empty())
+                    ans.push_back(-1);
+                else
+                    ans.push_back(st.top());
+            }
+
+            st.push(nums[i % n]);
+        }
+
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};
