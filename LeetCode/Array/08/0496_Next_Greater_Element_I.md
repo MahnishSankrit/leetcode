@@ -11,28 +11,30 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 4, 2026 at 11:46 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/next-greater-element-i/submissions/2094455693/) |
+| **Submitted** | August 5, 2026 at 12:28 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/next-greater-element-i/submissions/2094508122/) |
 
 ## Solution
 
 ```unknown
-        }
-            }
-
+            }else if(st.top() > nums2[i]){
+                mp[nums2[i]] = st.top();
+                st.push(nums2[i]);
+                st.push(nums2[i]);
+                mp[nums2[i]] = -1;
+        for(int i=n2-1; i>=0; i--){
+            if(st.empty()){
+            }else if(st.top() < nums2[i]){
+                while(!st.empty() && st.top() <= nums2[i]){
+                    st.pop();
                 }
-        vector<int> ans;
-        for(int i=0; i<n1; i++){
-            if(mp.find(nums1[i]) != mp.end()){
-                ans.push_back(mp[nums1[i]]);
-            }else{
-                ans.push_back(-1);
-            }
-        }
-
-        return ans;
-    }
-};
+                if(st.empty()){
+                    mp[nums2[i]] = -1;
+                    st.push(nums2[i]);
+                }else{
+                    mp[nums2[i]] = st.top();
+                }
+                st.push(nums2[i]);
 
 ```
 
