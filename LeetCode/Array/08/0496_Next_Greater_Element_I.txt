@@ -1,0 +1,16 @@
+        }
+            }
+
+                }
+        vector<int> ans;
+        for(int i=0; i<n1; i++){
+            if(mp.find(nums1[i]) != mp.end()){
+                ans.push_back(mp[nums1[i]]);
+            }else{
+                ans.push_back(-1);
+            }
+        }
+
+        return ans;
+    }
+};
