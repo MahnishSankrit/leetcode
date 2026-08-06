@@ -1,0 +1,17 @@
+                }
+                if (st.empty()) {
+                    right[i] = n;
+                    st.push(i);
+                } else {
+                    st.pop();
+                while (!st.empty() && nums[st.top()] < nums[i]) {
+            } else {
+                st.push(i);
+                right[i] = n;
+            if (st.empty()) {
+                    right[i] = st.top();
+                    st.push(i);
+                }
+            }
+        }
+        return right;
