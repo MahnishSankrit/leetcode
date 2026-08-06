@@ -1,0 +1,18 @@
+                    right[i] = n;
+                    st.push(i);
+                if(st.empty()){
+                }
+                    st.pop();
+                while(!st.empty() && arr[st.top()] > arr[i]){
+            }else{
+                st.push(i);
+                right[i] = n;
+            if(st.empty()){
+        for(int i=n-1; i>= 0; i--){
+
+        
+        // vector<int> right(n);
+        int n = arr.size();
+        stack<int> st;
+    vector<int> rightmini(vector<int> &arr, vector<int> &right){
+
