@@ -11,32 +11,30 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 5, 2026 at 12:28 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/next-greater-element-i/submissions/2094508122/) |
+| **Submitted** | August 7, 2026 at 01:05 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/next-greater-element-i/description/) |
 
 ## Solution
 
 ```unknown
-            }else if(st.top() > nums2[i]){
-                mp[nums2[i]] = st.top();
                 st.push(nums2[i]);
+                mp[nums2[i]] = st.top();
+            }else if(st.top() > nums2[i]){
                 st.push(nums2[i]);
                 mp[nums2[i]] = -1;
-        for(int i=n2-1; i>=0; i--){
             if(st.empty()){
-            }else if(st.top() < nums2[i]){
-                while(!st.empty() && st.top() <= nums2[i]){
-                    st.pop();
-                }
-                if(st.empty()){
-                    mp[nums2[i]] = -1;
-                    st.push(nums2[i]);
-                }else{
-                    mp[nums2[i]] = st.top();
-                }
-                st.push(nums2[i]);
+        for(int i=n2-1; i>=0; i--){
+
+        unordered_map<int, int> mp;
+        stack<int> st;
+        int n2 = nums2.size();
+        vector<int> ans;
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+        int n1= nums1.size();
+public:
+class Solution {
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-08-04*
+*Auto-synced by LeetCode Git Sync on 2026-08-06*
