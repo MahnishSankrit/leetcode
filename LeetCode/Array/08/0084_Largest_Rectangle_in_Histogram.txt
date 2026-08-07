@@ -1,0 +1,11 @@
+        rightmini(heights, right);
+        int area = 0;
+
+        for(int i=0; i<n; i++){
+            int width = right[i] - left[i] - 1;
+            area = max(width * heights[i] , area);
+        }
+
+        return area;
+    }
+};
