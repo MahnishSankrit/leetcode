@@ -1,0 +1,17 @@
+                k--;
+                st.pop();
+            while(!st.empty() && k > 0 && st.top() > num[i]) {
+        for (int i = 0; i < n; i++) {
+
+        }
+            return "0";
+        if (k == n) {
+
+        string ans = "";
+        stack<char> st;
+            }
+            st.push(num[i]);
+        }
+
+        while (!st.empty() && k > 0) {
+            st.pop();
