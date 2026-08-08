@@ -1,0 +1,17 @@
+        vector<int> nums(m, 0);
+
+        int maxArea = INT_MIN;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (matrix[i][j] == '0') {
+                    nums[j] = 0;
+                } else {
+                    nums[j]++;
+                }
+            }
+            int val = area(nums);
+
+            maxArea = max(val, maxArea);
+        }
+    return maxArea;
