@@ -11,28 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 10, 2026 at 07:41 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/fruit-into-baskets/submissions/2101634683/) |
+| **Submitted** | August 10, 2026 at 11:38 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/fruit-into-baskets/submissions/2101913337/) |
 
 ## Solution
 
 ```unknown
-                    ans.push_back(nums[j]);
-                }else if(ans.size() == 1 && ans[0] != nums[j]){
-                    ans.push_back(nums[j]);
-                if(ans.empty()){
-            for(int j=i; j<n; j++){
-                }else if(ans.size() == 2 && ans[0] != nums[j] && ans[1] != nums[j]){
-                   break;
-                } 
-                len = max(len , j - i + 1);
-            }
-        }
 
-        return len;
+                    j++;
+                    if(mp[nums[j]] == 0) mp.erase(nums[j]);
 
-    }
-};
+                    mp[nums[j]]--;
+                while(mp.size() > 2){
+            
+
+            mp[nums[i]]++;
+        for(int i=0; i<n; i++){
+
+        unordered_map<int, int >mp;
+        int j=0;
+        int maxLen = 0;
+        int n= nums.size();
+                }
+
 
 ```
 
