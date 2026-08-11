@@ -1,0 +1,17 @@
+
+            int change = window - maxFreq;
+            
+                while(change > k){
+                    mp[s[j]]--;
+                    j++;
+                }
+                window = i - j + 1;
+
+            maxWindow = max(maxWindow , window);
+        }
+            int window = i -j +1;
+            maxFreq = max(maxFreq, mp[s[i]]);
+
+            mp[s[i]]++;
+                    change = window - maxFreq;
+                    window = i - j  + 1;
