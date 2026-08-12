@@ -11,30 +11,28 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 11, 2026 at 03:49 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/binary-subarrays-with-sum/submissions/2102681108/) |
+| **Submitted** | August 12, 2026 at 10:50 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/binary-subarrays-with-sum/submissions/2104530725/) |
 
 ## Solution
 
 ```unknown
+            if(mp.find(sum - goal) != mp.end()){
+            sum += nums[i];
+                count += mp[sum - goal];
+            }
 
         for(int i=0; i<n; i++){
-            for(int j=i; j<n; j++){
+     
+        mp[0] = 1;
         }
-                sum += nums[j];
-            }
-            int sum = 0;
-                if(goal == sum){
-                    maxCount++;
-                }
-
-        int maxCount  = 0;
-        int n = nums.size();
-        return maxCount;
+        return count;
     }
+            mp[sum]++;
 };
+        unordered_map<int, int> mp;
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-08-11*
+*Auto-synced by LeetCode Git Sync on 2026-08-12*
