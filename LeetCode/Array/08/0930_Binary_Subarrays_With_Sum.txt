@@ -1,16 +1,14 @@
+            if(mp.find(sum - goal) != mp.end()){
+            sum += nums[i];
+                count += mp[sum - goal];
+            }
 
         for(int i=0; i<n; i++){
-            for(int j=i; j<n; j++){
+     
+        mp[0] = 1;
         }
-                sum += nums[j];
-            }
-            int sum = 0;
-                if(goal == sum){
-                    maxCount++;
-                }
-
-        int maxCount  = 0;
-        int n = nums.size();
-        return maxCount;
+        return count;
     }
+            mp[sum]++;
 };
+        unordered_map<int, int> mp;
