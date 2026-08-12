@@ -1,0 +1,17 @@
+               }
+                odd--;
+               if(nums[j] % 2 != 0){
+               j++;
+            }
+            count += i - j +1 ;
+        }
+
+        return count;
+    }
+    int numberOfSubarrays(vector<int>& nums, int k) {
+        int n=nums.size();
+        int count = 0;
+
+
+        return sub(nums, k) - sub(nums, k-1);
+    }
