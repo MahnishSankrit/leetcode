@@ -1,0 +1,17 @@
+                q.pop();
+        while(!q.empty()){
+            int size = q.size();
+            vector<int> arr;
+            for(int i=0; i<size; i++){
+                TreeNode *data = q.front();
+
+        q.push(root);
+       
+        queue<TreeNode*> q;
+
+                arr.push_back(data->val);
+                if(data->left != nullptr){
+                    q.push(data->left);
+                }
+                if(data->right != nullptr){
+                    q.push(data->right);
