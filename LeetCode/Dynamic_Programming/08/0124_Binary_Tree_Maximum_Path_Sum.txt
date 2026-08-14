@@ -1,0 +1,17 @@
+        maxSum = max(maxSum, left + right + root->val);
+
+        return root->val + max(left, right);
+
+        int   right = max(0,sumPath(root->right));
+        int  left = max(0, sumPath(root->left));
+
+        if(root == nullptr) return 0;
+    int sumPath(TreeNode *root){
+    }
+    int maxPathSum(TreeNode* root) {
+        if(root == nullptr) return 0;
+        // if(root->left == nullptr && root->right == nullptr) return root->val;
+
+        sumPath(root);
+        return maxSum ;
+    }
