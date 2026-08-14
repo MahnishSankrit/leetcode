@@ -1,0 +1,16 @@
+        int left = 0;
+        int right = 0;
+        if(root->left != nullptr){
+            left = height(root->left);
+        }
+        if(root->right != nullptr){
+            right  = height(root->right);
+        }
+
+        // if(root->left == nullptr && root->right == nullptr) return true;
+        if(abs(left - right) > 1)return false;
+
+        return isBalanced(root->left) && isBalanced(root->right);
+    }
+
+};
