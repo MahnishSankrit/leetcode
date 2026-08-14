@@ -1,17 +1,13 @@
-        int r = height(root->right);
+                    q.push(temp->left);
+                }
+                if(temp->right != nullptr){
+                    q.push(temp->right);
+                }
 
-        return 1 +  max(l , r);
-    }
-    int maxDepth(TreeNode* root) {
-        if(root == nullptr) return 0;
-
-        int count = 0;
-        int l = height(root->left);
-    
-        return height(root);
+            }
+                count++;
+        }
         
-
-        if(root == nullptr) return 0;
-public:
-class Solution {
-    int height(TreeNode *root){
+        return count;
+    }
+};
