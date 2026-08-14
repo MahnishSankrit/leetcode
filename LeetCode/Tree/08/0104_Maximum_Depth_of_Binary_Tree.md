@@ -11,29 +11,25 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 14, 2026 at 04:23 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/2106506158/) |
+| **Submitted** | August 15, 2026 at 12:04 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/2106960801/) |
 
 ## Solution
 
 ```unknown
-        int r = height(root->right);
+                    q.push(temp->left);
+                }
+                if(temp->right != nullptr){
+                    q.push(temp->right);
+                }
 
-        return 1 +  max(l , r);
-    }
-    int maxDepth(TreeNode* root) {
-        if(root == nullptr) return 0;
-
-        int count = 0;
-        int l = height(root->left);
-    
-        return height(root);
+            }
+                count++;
+        }
         
-
-        if(root == nullptr) return 0;
-public:
-class Solution {
-    int height(TreeNode *root){
+        return count;
+    }
+};
 
 ```
 
