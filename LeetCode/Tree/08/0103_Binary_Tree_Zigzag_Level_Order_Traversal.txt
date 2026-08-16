@@ -1,0 +1,17 @@
+
+        }
+    }
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>> ans;
+            }   
+                }
+                    q.push(temp->right);
+            if(level % 2 != 0){
+                reverse(arr.begin(), arr.end());
+                ans.push_back(arr);
+            }else{
+                ans.push_back(arr);
+            }
+
+            level++;
+        bfs(root, ans);
