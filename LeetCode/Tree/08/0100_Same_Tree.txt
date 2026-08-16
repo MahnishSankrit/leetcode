@@ -1,0 +1,17 @@
+        
+
+        return isSameTree(p->left, q->left) && isSameTree
+        if(p == nullptr || q == nullptr) return false;
+
+        
+        if(p->val != q->val) return false;
+
+       
+        if(p == nullptr && q == nullptr) return true;
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+public:
+class Solution {
+ */
+ * };
+ val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : 
