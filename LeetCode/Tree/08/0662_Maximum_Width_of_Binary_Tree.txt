@@ -1,0 +1,17 @@
+
+          for(long long i=0; i<size; i++){
+            TreeNode *temp = q.front().first;
+            long long index = q.front().second;
+            q.pop();
+            last = index;
+            index = index - first;
+
+            if(temp->left != nullptr){
+                q.push({temp->left, 2 * index + 1});
+            }
+            if(temp->right != nullptr){
+                q.push({temp->right, 2 * index  + 2});
+            }
+            long long  width = last - first  + 1;
+            val = max(val, (int)width);
+          }
