@@ -1,0 +1,17 @@
+
+        temp += "->";
+
+        path(root->left, ans, temp);
+        path(root->right, ans, temp);
+
+        // temp.pop_back();
+        temp.resize(len);
+    }
+
+    vector<string> binaryTreePaths(TreeNode* root) {
+        vector<string> ans;
+        string temp;
+        path(root, ans, temp);
+
+
+        return ans;
