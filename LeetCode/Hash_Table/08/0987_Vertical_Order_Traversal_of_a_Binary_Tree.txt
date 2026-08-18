@@ -1,0 +1,18 @@
+            auto temp  = q.front();
+            q.pop();
+
+            TreeNode *node = temp.first;
+            int row = temp.second.first;
+            int col = temp.second.second;
+
+            mp[col][row].insert(node->val);
+            if(node->left){
+                q.push({node->left, {row+1, col - 1}});
+            }
+
+            if(node->right){
+                q.push({node->right, {row+1, col+1}});
+            }
+        }
+
+        vector<vector<int>> ans;
