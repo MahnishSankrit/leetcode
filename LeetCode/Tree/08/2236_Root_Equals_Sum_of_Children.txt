@@ -1,0 +1,17 @@
+ */
+class Solution {
+public:
+    bool checkTree(TreeNode* root) {
+        if(root == nullptr) return true;
+        if(root->left == nullptr && root->right == nullptr) return true;
+
+        if(root->left == nullptr){
+            if(root->val != root->right->val) return false;
+        }else if(root->right == nullptr){
+            if(root->val != root->left->val) return false;
+        }else{
+            if(root->val != root->left->val + root->right->val) return false;
+        }
+    }
+
+        return checkTree(root->left) && checkTree(root->right);
