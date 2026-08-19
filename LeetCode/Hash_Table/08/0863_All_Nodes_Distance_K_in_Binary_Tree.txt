@@ -1,0 +1,18 @@
+                    visited.insert(temp->right);
+                }
+                
+                if(parent.find(temp) != parent.end() && !visited.count(parent[temp])){
+                    q.push(parent[temp]);
+                    visited.insert(parent[temp]);
+                }
+                
+            }
+            k--;
+        }
+
+        while(!q.empty()){
+
+            int val = q.front()->val;
+            q.pop();
+            arr.push_back(val);
+        }
