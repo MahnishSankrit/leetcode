@@ -11,30 +11,31 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 13, 2026 at 08:04 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2105540946/) |
+| **Submitted** | August 21, 2026 at 09:27 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2115230426/) |
 
 ## Solution
 
 ```unknown
-    void inorder(TreeNode *root, vector<int> &arr){
-        if(root != nullptr){
+            }
+                temp =temp->left;
+                st.push(temp);
+            while(temp != nullptr){
 
-            inorder(root->left ,arr);
-        }
-            arr.push_back(root->val);
-            inorder(root->right, arr);
-    }
-    vector<int> inorderTraversal(TreeNode* root) {
+        while( temp != nullptr ||!st.empty()){
+        
+        TreeNode *temp = root;
+
+        // st.push(root);
+        stack<TreeNode *> st;
+
+        if(root == nullptr) return arr;
+
         vector<int> arr;
-    }
-        inorder(root, arr);
-public:
-class Solution {
-        return arr;
-};
+    vector<int> inorderTraversal(TreeNode* root) {
+  
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-08-13*
+*Auto-synced by LeetCode Git Sync on 2026-08-21*
