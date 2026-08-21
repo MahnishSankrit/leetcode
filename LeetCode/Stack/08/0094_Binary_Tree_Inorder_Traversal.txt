@@ -1,16 +1,17 @@
-    void inorder(TreeNode *root, vector<int> &arr){
-        if(root != nullptr){
+            }
+                temp =temp->left;
+                st.push(temp);
+            while(temp != nullptr){
 
-            inorder(root->left ,arr);
-        }
-            arr.push_back(root->val);
-            inorder(root->right, arr);
-    }
-    vector<int> inorderTraversal(TreeNode* root) {
+        while( temp != nullptr ||!st.empty()){
+        
+        TreeNode *temp = root;
+
+        // st.push(root);
+        stack<TreeNode *> st;
+
+        if(root == nullptr) return arr;
+
         vector<int> arr;
-    }
-        inorder(root, arr);
-public:
-class Solution {
-        return arr;
-};
+    vector<int> inorderTraversal(TreeNode* root) {
+  
