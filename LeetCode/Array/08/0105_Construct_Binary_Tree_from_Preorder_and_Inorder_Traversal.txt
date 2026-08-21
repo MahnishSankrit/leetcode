@@ -1,0 +1,17 @@
+        int numleft = inroot - instart;
+        int inroot = mp[root->val];
+        TreeNode *root = new TreeNode(preorder[prestart]);
+
+        if(prestart > preend || instart > inend) return nullptr ;
+    inend, map<int, int> &mp){
+
+        root->left = construct(preorder, prestart + 1, prestart + numleft,
+                           inorder, instart, inroot - 1, mp);
+        root->right = construct(preorder, prestart + numleft + 1, preend,
+                            inorder, inroot + 1, inend, mp);
+    }
+
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        map<int, int> mp;
+                            
+        return root;
