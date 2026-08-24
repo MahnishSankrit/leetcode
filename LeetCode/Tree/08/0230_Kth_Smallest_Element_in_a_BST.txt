@@ -1,0 +1,13 @@
+
+        inorder(root->left , arr);
+        arr.push_back(root->val);
+        inorder(root->right, arr);
+    }
+    int kthSmallest(TreeNode* root, int k) {
+        if(root == nullptr) return -1;
+        vector<int> arr;
+        inorder(root, arr);
+
+        return arr[k-1];
+    }
+};
