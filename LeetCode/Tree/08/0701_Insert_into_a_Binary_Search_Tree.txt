@@ -1,0 +1,17 @@
+               if(temp->right != nullptr) temp = temp->right;
+            if(temp->val < val){
+        while(temp != nullptr){
+        TreeNode *temp = root;
+        }
+            return temp;
+            TreeNode *temp = new TreeNode(val);
+        if(root == nullptr){
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+               else{
+                temp->right = new TreeNode(val);
+                break;
+               }
+            }else{
+                if(temp->left != nullptr) temp = temp->left;
+                else{
+                    temp->left = new TreeNode(val);
