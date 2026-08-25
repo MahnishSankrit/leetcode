@@ -11,28 +11,27 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | August 26, 2026 at 01:27 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/submissions/2120131038/) |
+| **Submitted** | August 26, 2026 at 01:30 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/submissions/2120133165/) |
 
 ## Solution
 
 ```unknown
+        int need = k - root->val;
+    unordered_map<int, int> mp;
 
-        inorder(root, arr);
-        int n= arr.size();
-  
-        for(int i=0; i<n; i++){
-             int need = k - arr[i];
-
-            if(mp.find(need) != mp.end()) return true;
-
-            mp[arr[i]]++;
-        }
-
-        return false;
+        return findTarget(root->left, k) || findTarget(root->right, k);
 
     }
+
+        if(mp.find(need) != mp.end()) return true;
+       if(root == nullptr) return false;
+    bool findTarget(TreeNode* root, int k) {
+        mp[root->val]++;
+
 };
+ 
+    
 
 ```
 
