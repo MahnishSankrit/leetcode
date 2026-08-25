@@ -1,0 +1,17 @@
+                curr->right = temp;
+                TreeNode *temp = new TreeNode(preorder[i]);
+            if(curr->right == nullptr){
+        }else {
+            }
+                constBST(preorder, root ,curr->left, i);
+            }else{
+                constBST(preorder,root,  root, i+1);
+                curr->left = temp;
+                TreeNode *temp = new TreeNode(preorder[i]);
+            if(curr->left == nullptr){
+        if(curr->val > preorder[i]){
+        // TreeNode *curr = root;
+
+        if(i == preorder.size()) return;
+    void constBST(vector<int> &preorder, TreeNode *root, TreeNode *curr , int i){
+public:
