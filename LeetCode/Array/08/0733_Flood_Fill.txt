@@ -1,0 +1,17 @@
+            q.pop();
+
+            for(int i=0; i<4; i++){
+                int nx = cx + dx[i];
+                int ny = cy + dy[i];
+
+                if(nx >= 0 && ny >= 0 && nx < n && ny < m && image[nx][ny] == oldColor){
+                    if(!visited[nx][ny]){
+                        image[nx][ny] = newColor;
+                        visited[nx][ny] = 1;
+                        q.push({nx, ny});
+                    }
+                }
+            }
+        }
+
+        return image;
