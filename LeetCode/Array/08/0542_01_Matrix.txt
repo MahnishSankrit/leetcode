@@ -1,0 +1,15 @@
+
+                if(nx >= 0 && ny >= 0 && nx < n && ny < m){
+                    if(!visited[nx][ny]){
+                        visited[nx][ny] = 1;
+                        q.push({nx, ny});
+                    }
+                }
+               
+            }
+        }
+
+        return mat;
+    }
+                        mat[nx][ny] = mat[cx][cy] + 1;
+};
