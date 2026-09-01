@@ -1,0 +1,17 @@
+            adj[v].push_back(i);
+            outdegree[i]++;
+
+            }
+        }
+            
+        vector<int> arr;
+        vector<int> visited(n, 0);
+        for(int i=0; i<n; i++){
+            if(outdegree[i] == 0 && !visited[i]){
+                safe(i, visited, adj, arr, outdegree);
+            }
+        }
+        sort(arr.begin(), arr.end());
+        return arr;
+    }
+};
