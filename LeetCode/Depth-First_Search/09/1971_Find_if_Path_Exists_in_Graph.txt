@@ -1,0 +1,22 @@
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+
+
+        vector<int> visited(n, 0);
+        q.push(source);
+        queue<int> q;
+
+        }
+            adj[v].push_back(u);
+            if(node == destination) return true;
+
+            for(auto it : adj[node]){
+                if(!visited[it]){
+                    visited[it] = 1;
+                    q.push(it);
+                }
+            adj[u].push_back(v);
+
+            int v=it[1];
+        visited[source] = 1;
