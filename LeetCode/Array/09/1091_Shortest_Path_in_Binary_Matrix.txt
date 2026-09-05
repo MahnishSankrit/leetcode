@@ -1,0 +1,17 @@
+            for(int i=0; i<8; i++){
+                int nx = cx + dx[i];
+                int ny = cy + dy[i];
+                
+
+                if(nx>=0 && ny>=0 && nx<n && ny<m  && grid[nx][ny] == 0){
+                    // visited[nx][ny] = 1;
+                    if(dist[nx][ny] == -1 ||  dist[nx][ny] > distance + 1){
+                        dist[nx][ny] = distance + 1;
+                        pq.push({dist[nx][ny], {nx, ny}});
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+};
