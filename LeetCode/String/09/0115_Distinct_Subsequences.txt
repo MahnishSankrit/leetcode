@@ -1,0 +1,21 @@
+    int numDistinct(string s, string t) {
+        int n=s.length();
+        int m=t.length();
+
+        int count = 0;
+        generate(s, t, count, 0, temp);
+    }
+        generate(s, t, count, i+1, temp+s[i]);
+        // temp.pop_back();
+        generate(s, t, count, i+1, temp);
+        string temp="";
+        
+        }
+            }
+                count++;
+            if(temp == t){
+        if(i==s.length()){
+    void generate(string &s, string &t, int &count, int i, string temp){
+public:
+                return;
+        return count;
