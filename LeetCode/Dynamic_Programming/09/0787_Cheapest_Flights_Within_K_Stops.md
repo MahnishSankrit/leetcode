@@ -11,28 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 7, 2026 at 08:09 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/submissions/2134001524/) |
+| **Submitted** | September 7, 2026 at 10:45 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/submissions/2134194144/) |
 
 ## Solution
 
 ```unknown
-        q.push({0, src});
+                    int weight = it.second;
+                    int vertex = it.first;
+                for(auto it : adj[node]){
 
-        vector<int> cost(n, INT_MAX);
-        queue<pair<int, int>> q;
+                }
+                if(stops == k+1) continue;
+                    minCost = min(minCost, price);
+                if(node == dst){
 
-        }
-            adj[u].push_back({v, wt});
-            
-            int wt=edge[2];
-            int v=edge[1];
-            int u=edge[0];
-        for(auto edge : flights){
-        vector<vector<pair<int, int>>> adj(n);
-    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-public:
-class Solution {
+                pq.pop();
+                int stops = pq.top().second.second;
+                int node = pq.top().second.first;
+                int price = pq.top().first;
+        while(!pq.empty() && level <= k + 1){
+            int level = 0;
+
+        int minCost = INT_MAX;
 
 ```
 
