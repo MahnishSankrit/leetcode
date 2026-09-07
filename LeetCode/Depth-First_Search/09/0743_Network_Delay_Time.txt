@@ -1,0 +1,17 @@
+
+        dist[k] = 0;
+        q.push({0, k});
+        queue<pair<int,int>> q;
+        vector<int> dist(n+1, INT_MAX);
+
+        }
+            adj[u].push_back({v, wt});
+        while(!q.empty()){
+            int cost = q.front().first;
+            int node = q.front().second;
+            q.pop();
+
+
+            for(auto it : adj[node]){
+                int wt = it.second;
+                int vertex = it.first;
