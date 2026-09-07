@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 7, 2026 at 11:10 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/network-delay-time/submissions/2134229617/) |
+| **Submitted** | September 7, 2026 at 11:34 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/network-delay-time/submissions/2134261993/) |
 
 ## Solution
 
 ```unknown
-
-        dist[k] = 0;
-        q.push({0, k});
-        queue<pair<int,int>> q;
-        vector<int> dist(n+1, INT_MAX);
-
-        }
-            adj[u].push_back({v, wt});
-        while(!q.empty()){
-            int cost = q.front().first;
-            int node = q.front().second;
-            q.pop();
-
+            int node = pq.top().second;
+            pq.pop();
 
             for(auto it : adj[node]){
-                int wt = it.second;
                 int vertex = it.first;
+                int wt = it.second;
+            int cost = pq.top().first;
+        while(!pq.empty()){
+                if(dist[vertex] == INT_MAX || dist[vertex] > cost +  wt){
+                    dist[vertex] = cost + wt;
+                    pq.push({dist[vertex], vertex});
+                }
+            }
+        }
+
+        int ans = 0;
+        for(int i=1; i<=n; i++){
 
 ```
 
