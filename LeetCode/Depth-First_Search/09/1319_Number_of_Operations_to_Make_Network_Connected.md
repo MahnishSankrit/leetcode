@@ -11,8 +11,8 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 9, 2026 at 11:44 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/submissions/2136722529/) |
+| **Submitted** | September 9, 2026 at 11:47 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/submissions/2136726829/) |
 
 ## Solution
 
@@ -22,20 +22,19 @@
     int makeConnected(int n, vector<vector<int>>& connections) {
         if(connections.size() < n-1) return -1;
         parent.resize(n);
-        rank.resize(n);
+        // rank.resize(n);
+        }
+            parent[p_v] = p_u;
+            Size[p_u] += Size[p_v];
+        Size.resize(n);
 
         for(int i=0; i<n; i++){
             parent[i] = i;
+            Size[i] = 1;
         }
         int component = n;
 
         for(int i=0; i<connections.size(); i++){
-            if(find(connections[i][0]) != find(connections[i][1])){
-                Union(connections[i][0], connections[i][1]);
-                component--;
-            }
-        }
-
 
 ```
 
