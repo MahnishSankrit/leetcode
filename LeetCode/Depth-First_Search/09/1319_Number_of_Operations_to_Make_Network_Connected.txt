@@ -1,0 +1,9 @@
+
+            int v=it[1];
+        for(auto it : connections){
+            int u=it[0];
+        vector<vector<int>> adj(n);
+    int makeConnected(int n, vector<vector<int>>& connections) {
+public:
+class Solution {
+        if(connections.size() <  n-1) return -1;
