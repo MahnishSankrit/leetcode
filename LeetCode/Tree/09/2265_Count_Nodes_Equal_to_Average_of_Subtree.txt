@@ -1,0 +1,17 @@
+        return left + right + root->val;
+        if(root->val == (left + right + root->val)/ node) count++;
+        node = leftnode + rightnode + 1;
+
+    }
+    int averageOfSubtree(TreeNode* root) {
+        if(root == nullptr) return 0;
+        int count = 0;
+
+        countNode(root, count, node);
+
+        return count;
+        
+        
+    }
+        int node = 0;
+};
