@@ -1,0 +1,16 @@
+
+            if(used[i]) continue;
+        for(int i=0; i<n; i++){
+
+        int newNum = (num * 10) + digits[j];
+        }
+            return;
+            }
+                st.insert(num);
+            if(num % 2 == 0){
+        if(j == 3){
+        
+    j, int num){
+    void countDigit(int n, vector<int> &digits, unordered_set<int> &st,vector<bool> &used, int 
+public:
+class Solution {
