@@ -1,0 +1,17 @@
+        if(n <= 1) return 1;
+
+        if(dp[n] != -1) return dp[n];
+        int take = climb(n-1, dp);
+        int notTake = climb(n-2, dp);
+        dp[n] = take + notTake;
+
+        return take + notTake;
+
+    }
+
+    int climbStairs(int n) {
+        vector<int> dp(n+1, -1);
+       return climb(n, dp);
+        
+    }
+};
