@@ -1,0 +1,16 @@
+    }
+    int minCostClimbingStairs(vector<int>& cost) {
+
+        int skip = solve(cost, dp, n - 2) + cost[n];
+
+        dp[n] = min(take, skip);
+        return dp[n];
+        int take = solve(cost, dp, n-1) + cost[n];
+
+        if(dp[n] != -1) return dp[n];
+
+        if(n == 0) return cost[0];
+    int solve(vector<int> &cost, vector<int> &dp, int n){
+public:
+class Solution {
+        if(n == 1) return cost[1];
