@@ -1,0 +1,14 @@
+    }
+    int smallestIndex(vector<int>& nums) {
+        int n=nums.size();
+        return val;
+
+        for(int i=0; i<n; i++){
+            if(digitsum(nums[i]) == i){
+                return i;
+            }
+        }
+
+        return -1;
+    }
+};
