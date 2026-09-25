@@ -1,16 +1,16 @@
-    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-        int m=obstacleGrid.size();
-        int n=obstacleGrid[0].size();
     }
-        return right + down;
+        return dp[i][j] = right + down;
 
-        int down = solve(m, n, i, j+1, grid);
-        int right = solve(m, n, i+1, j, grid);
+        int down = solve(m, n, i, j+1, grid, dp);
+        int right = solve(m, n, i+1, j, grid, dp);
+
+        if(dp[i][j] != -1) return dp[i][j];
 
         if(grid[i][j] == 1) return 0;
         if(i >= m || j >= n) return 0;
+    int solve(int m, int n, int i, int j, vector<vector<int>> &grid, vector<vector<int>> &dp){
         if(i == m-1 && j == n-1) return 1;
-    int solve(int m, int n, int i, int j, vector<vector<int>> &grid){
 // only recursion will give you the tle
 public: 
 class Solution {
+// this was the memo method 
