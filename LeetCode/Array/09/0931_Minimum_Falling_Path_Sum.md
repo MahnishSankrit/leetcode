@@ -11,12 +11,17 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 25, 2026 at 06:14 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-falling-path-sum/submissions/2152975570/) |
+| **Submitted** | September 25, 2026 at 06:29 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-falling-path-sum/submissions/2152986055/) |
 
 ## Solution
 
 ```unknown
+        // vector<vector<int>> dp(m, vector<int>(n, -1000000));
+
+        int n=matrix[0].size();
+        int m=matrix.size();
+    int minFallingPathSum(vector<vector<int>>& matrix) {
     }
         return dp[i][j] = min(down, min(left, right));
 
@@ -27,13 +32,8 @@
         if(i == m-1) return dp[i][j] = matrix[i][j];
         if(dp[i][j] != -1000000) return dp[i][j]; // tjis is the memo method
 
-    int solve(int m, int n, int i, int j, vector<vector<int>> &matrix, vector<vector<int>> &dp)
-    {
         if(j < 0 || j >= n) return 1e9;
-    int minFallingPathSum(vector<vector<int>>& matrix) {
-        int m=matrix.size();
-        int n=matrix[0].size();
-
+    {
 
 ```
 
