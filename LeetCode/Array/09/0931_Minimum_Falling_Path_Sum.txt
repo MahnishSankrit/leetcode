@@ -1,0 +1,16 @@
+        int m=matrix.size();
+        int n=matrix[0].size();
+    int minFallingPathSum(vector<vector<int>>& matrix) {
+    }
+        return min(down, min(left, right));
+
+        int  down = matrix[i][j] + solve(m, n, i+1, j, matrix);
+        int  right = matrix[i][j] + solve(m, n, i+1, j+1, matrix);
+        int left = matrix[i][j] + solve(m, n, i+1, j-1, matrix);
+
+        if(i == m-1) return matrix[i][j];
+        if(j < 0 || j >= n) return 900;
+    int solve(int m, int n, int i, int j, vector<vector<int>> &matrix){
+public:
+class Solution {
+ // this isthe recursion way which gives tle
