@@ -1,0 +1,16 @@
+    bool canTransform(vector<int>& source, vector<int>& target) {
+         int n=source.size();
+     
+        long long srcSum = 0;
+        long long tarSum = 0;
+
+        for(auto it : source){
+            srcSum += it;
+        }
+        for(auto it : target){
+            tarSum += it;
+        }
+
+        if(srcSum == tarSum) return true;
+        return false;
+    }
