@@ -11,28 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 27, 2026 at 05:33 PM |
+| **Submitted** | September 27, 2026 at 06:08 PM |
 | **Link** | [View on LeetCode](https://leetcode.com/problems/triangle/) |
 
 ## Solution
 
 ```unknown
-class Solution {
-public:
-    int solve(vector<vector<int>> &triangle, int m, int n, int i,int j, vector<vector<int>> &
-    dp){
-        if(i == m-1) return triangle[i][j];
+        vector<vector<int>> dp(m, vector<int>(m, 0));
+    
 
-        if(dp[i][j] != INT_MAX) return dp[i][j];
+        for(int i=m-1; i>=0; i--){
+            dp[m-1][i] = triangle[m-1][i];
+        }
 
-        int left = triangle[i][j] + solve(triangle, m, n, i+1, j, dp);
-        int right = triangle[i][j] + solve(triangle, m, n, i+1, j+1, dp);
+        for(int i=m-2;i>=0; i--){
+            for(int j=i; j>=0; j--){
 
-        dp[i][j] = min(left, right);
-        return dp[i][j];
-    }
-    int minimumTotal(vector<vector<int>>& triangle) {
-        int m=triangle.size();
+                int left = triangle[i][j] + dp[i+1][j];
+                int right = triangle[i][j] + dp[i+1][j+1];
+
+                dp[i][j] = min(left, right);
+
+            }
+        }
 
 ```
 
