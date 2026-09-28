@@ -1,0 +1,17 @@
+        
+        for(int i=1; i<m; i++){
+            for(int j=1; j<n; j++){
+                solve(matrix, grid, m, n, i, j);
+            }
+        }
+
+        }
+            grid[0][i] = matrix[0][i];
+        for(int i=0; i<n; i++){
+        }
+            grid[i][0] = matrix[i][0];
+        for(int i=0; i<m; i++){
+        vector<vector<int>> grid(m, vector<int>(n, -1));
+        int n=matrix[0].size();
+        int m=matrix.size();
+    int countSquares(vector<vector<int>>& matrix) {
