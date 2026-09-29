@@ -1,0 +1,16 @@
+    
+    int findTargetSumWays(vector<int>& nums, int target) {
+    }
+        int take = solve(nums, target, i+1, sum + nums[i], n);
+        int notTake = solve(nums, target, i+1, sum - nums[i], n);
+
+        return take + notTake;
+
+        }
+            return 0;
+            if(sum == target) return 1;
+        if(i >= n){
+    int solve(vector<int> &nums, int target, int i, int sum ,int n){
+public:
+class Solution {
+// this is the recursive way to solve this 
