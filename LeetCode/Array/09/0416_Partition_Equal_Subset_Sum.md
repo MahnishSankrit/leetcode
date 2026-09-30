@@ -11,25 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | September 30, 2026 at 11:20 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/submissions/2158459490/) |
+| **Submitted** | September 30, 2026 at 11:35 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/submissions/2158476631/) |
 
 ## Solution
 
 ```unknown
+                if(nums[i] + j <= target/2){
+                    take = dp[i+1][j+nums[i]];
+                }
 
-    bool canPartition(vector<int>& nums) {
-        int n=nums.size();
-        int target = 0;
-        for(int i=0; i<n; i++){
+                bool  notTake = dp[i+1][j];
+                bool take = false;
+            for(int j=0; j<=target/2; j++){
+        for(int i=n-1; i>=0; i--){
 
-        return solve(nums, target/2, 0, 0, dp);
-    }
-            target += nums[i];
-        }
+        dp[n][target/2] = 1;
+        vector<vector<int>> dp(n+1, vector<int>(target/2+1, 0));
+        // vector<vector<int>> dp(n, vector<int>(target/2, 0));
         if(target % 2 != 0) return false;
-        vector<vector<int>> dp(n, vector<int>(target/2, -1));
-};
+        }
+            target += nums[i];
+        for(int i=0; i<n; i++){
+        int target = 0;
 
 ```
 
