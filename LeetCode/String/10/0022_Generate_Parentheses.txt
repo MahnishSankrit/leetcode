@@ -1,0 +1,17 @@
+    }
+    void solve(int n, string temp, vector<string> &ans){
+        if(temp.length() == 2 * n){
+            if(check(temp)){
+                ans.push_back(temp);
+            }
+            return;
+        }
+        
+        solve(n, temp+'(', ans);
+        // temp="";
+        solve(n, temp+')', ans);
+
+    }
+    vector<string> generateParenthesis(int n) {
+        vector<string> ans;
+        solve(n, "", ans);
