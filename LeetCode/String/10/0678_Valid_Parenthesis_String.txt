@@ -1,0 +1,16 @@
+                }
+            }
+        
+
+                    }
+                        return false;
+                    }else{
+                        ex.pop();
+                    }else if(!ex.empty()){
+                        st.pop();
+                    if(!st.empty()){
+            }else{
+                st.push(i);
+            }else if(ch == '('){
+                ex.push(i);
+            if(ch == '*'){
