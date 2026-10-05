@@ -1,0 +1,16 @@
+        int notTake = solve(nums, dp, i+1, j, n);
+
+        return dp[i][j+1] = max(take, notTake); // doing the j+1 as we know j can be -1 which 
+        is not possible so to be in the save guard we can do this that why i have done this 
+    }
+
+    int lengthOfLIS(vector<int>& nums) {
+      int n=nums.size();
+      vector<int> arr;
+       
+    //    return solve(nums, arr, 0, n);  // this one is the recursion + backtraing
+    vector<vector<int>> dp(n + 1, vector<int> (n+1, -1));
+    //  return solve(nums, arr, 0, -1, n); // thisi s for the recursion
+
+    return solve(nums, dp, 0, -1, n); // this is for the memo method
+ 
