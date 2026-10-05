@@ -1,0 +1,17 @@
+        int n=s.length();
+        string t="";
+
+        // solve(s, t, 0, n);
+        for(int i=0; i<n; i++){
+            if(t.empty()){
+                t.push_back(s[i]);
+            }else if(!t.empty() && t.back() == s[i]){
+                t.pop_back();
+            }else{
+        }
+        
+        return t;
+       
+    string removeDuplicates(string s) {
+                t.push_back(s[i]);
+            }
