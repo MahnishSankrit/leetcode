@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-![Total Solved](https://img.shields.io/badge/Solved-195-brightgreen) ![Easy](https://img.shields.io/badge/Easy-72-brightgreen) ![Medium](https://img.shields.io/badge/Medium-111-yellow) ![Hard](https://img.shields.io/badge/Hard-12-red) ![Streak](https://img.shields.io/badge/Streak-4_days-orange)
+![Total Solved](https://img.shields.io/badge/Solved-196-brightgreen) ![Easy](https://img.shields.io/badge/Easy-72-brightgreen) ![Medium](https://img.shields.io/badge/Medium-112-yellow) ![Hard](https://img.shields.io/badge/Hard-12-red) ![Streak](https://img.shields.io/badge/Streak-5_days-orange)
 
 Repository for LeetCode solutions synced automatically via **LeetCode Git Sync**.
 
@@ -8,15 +8,15 @@ Repository for LeetCode solutions synced automatically via **LeetCode Git Sync**
 
 | Metric | Count |
 | --- | --- |
-| Total Solved | 195 |
+| Total Solved | 196 |
 | Easy | 72 |
-| Medium | 111 |
+| Medium | 112 |
 | Hard | 12 |
-| Current Streak | 4 days |
+| Current Streak | 5 days |
 
 ## Languages Used
 
-- **Unknown**: 195
+- **Unknown**: 196
 
 ---
-*Last updated: 2026-10-05 · Synced to `MahnishSankrit/leetcode`*
+*Last updated: 2026-10-06 · Synced to `MahnishSankrit/leetcode`*
