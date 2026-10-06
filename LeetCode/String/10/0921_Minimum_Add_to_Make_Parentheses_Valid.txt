@@ -1,0 +1,12 @@
+                    count++;
+                }
+            }
+        }
+
+        if(!st.empty()){
+            return count + st.size();
+        }
+        return count;
+        
+    }
+};
