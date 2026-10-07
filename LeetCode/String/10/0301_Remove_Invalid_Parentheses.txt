@@ -1,0 +1,17 @@
+                    st.insert(curr);
+                    st.clear();
+                    maxLen = curr.length();
+                if (curr.length() > maxLen) {
+            if (count == 0) {
+        if (i == n) {
+
+        if (count < 0) return;
+
+                }
+                else if (curr.length() == maxLen) {
+                    st.insert(curr);
+                }
+            }
+            return;
+        }
+
