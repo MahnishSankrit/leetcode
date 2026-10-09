@@ -1,0 +1,12 @@
+               if(!st.empty()){
+                st.pop();
+               }else{
+                count++;
+               }
+            }
+        }
+        
+        count += 2 * st.size();
+        return count;
+    }
+};
