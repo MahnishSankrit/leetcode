@@ -1,0 +1,19 @@
+1class Solution {
+2public:
+3    bool solve(long long  a, long long  b, long long c, int n){
+4        if(a + b + c  == n )return true;
+5        if(a + b + c > n) return false;
+6
+7        long long next = b + c;
+8
+9        return solve(b ,c, next, n);
+10        
+11    }
+12    bool threeFibonacciSum(int n) {
+13        long long a = 0;
+14        long long  b= 1;
+15        long long c = 1;
+16
+17        return solve(0, 1, 1, n);
+18    }
+19};
