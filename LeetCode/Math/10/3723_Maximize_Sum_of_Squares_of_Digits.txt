@@ -1,0 +1,16 @@
+        while(num > 0){
+            if(sum >= 9){
+            }else{
+        if(sum > 9 * num) return "";
+                ans += '9';
+                sum -= 9;
+                ans += char('0' + sum);
+            }
+                sum = 0;
+            num--;
+    string maxSumOfSquares(int num, int sum) {
+public:
+class Solution {
+        string ans = "";
+        if(sum == 0) return "";
+        }
