@@ -1,17 +1,16 @@
 
-       solve(nums, arr,temp,n, i+1, j);
-        }
-            temp.pop_back();
-            solve(nums, arr, temp, n, i+1, i);
-            temp.push_back(nums[i]);
-        if(j == -1 || nums[i] % nums[j] == 0){
-       
-        }
-            return;
+        vector<vector<int>> dp(n+1, vector<int>(n+1, -1));
+        
+        // solve(nums, arr,temp, n, 0, -1);  // recursion + backtraking 
+        // return arr;
+        
+        solveMemo(nums, dp, n, 0, -1);
+
+        vector<int> ans;
+        int prev = -1;
+        for(int i=0; i<n; i++){
+            int notTake = dp[i+1][prev+1];
+            int take = 0;
+            if(prev == -1 || nums[i] % nums[prev] == 0){
+                take = 1+ dp[i+1][i+1];
             }
-                arr = temp;
-            if(temp.size() > arr.size()){
-        if(i == n){
-    void solve(vector<int> &nums, vector<int> &arr, vector<int> &temp, int n, int i, int j){
-    //t this si sth recursion + backtrackiong approach to solve the problem
-public:
