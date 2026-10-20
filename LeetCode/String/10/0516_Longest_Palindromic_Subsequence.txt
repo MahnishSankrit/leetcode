@@ -1,17 +1,17 @@
-    // this is the recurson solution 
+        well
+        // } // mnot req in the memo as we use i and j not the string so tenmp is not req as 
+        //     return 0;
+        //     }
+        //     if(isPali(temp)){
+        //         return temp.length();
+        // if(i >= n){
+    int solveMemo(string &s, int n, int i, int j,vector<vector<int>> &dp){
 
-    int solve(string &s, int n, int i, string temp){
-        if(i >= n){
-            if(isPali(temp)){
-                return temp.length();
-            }
-            return 0;
-        }
+    // }
+    //     return max(take, skip);
 
-        int take = solve(s, n, i+1, temp + s[i]);
-    }
-        return true;
+    //     int skip = solve(s, n, i+1, temp);
+    //     int take = solve(s, n, i+1, temp + s[i]);
 
-        }
-        int skip = solve(s, n, i+1, temp);
-
+    //     }
+    //         return 0;
