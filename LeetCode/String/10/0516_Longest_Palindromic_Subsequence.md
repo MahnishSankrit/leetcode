@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | October 20, 2026 at 11:04 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-palindromic-subsequence/) |
+| **Submitted** | October 20, 2026 at 11:25 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-palindromic-subsequence/submissions/2177322805/) |
 
 ## Solution
 
 ```unknown
-    // this is the recurson solution 
+        well
+        // } // mnot req in the memo as we use i and j not the string so tenmp is not req as 
+        //     return 0;
+        //     }
+        //     if(isPali(temp)){
+        //         return temp.length();
+        // if(i >= n){
+    int solveMemo(string &s, int n, int i, int j,vector<vector<int>> &dp){
 
-    int solve(string &s, int n, int i, string temp){
-        if(i >= n){
-            if(isPali(temp)){
-                return temp.length();
-            }
-            return 0;
-        }
+    // }
+    //     return max(take, skip);
 
-        int take = solve(s, n, i+1, temp + s[i]);
-    }
-        return true;
+    //     int skip = solve(s, n, i+1, temp);
+    //     int take = solve(s, n, i+1, temp + s[i]);
 
-        }
-        int skip = solve(s, n, i+1, temp);
-
+    //     }
+    //         return 0;
 
 ```
 
