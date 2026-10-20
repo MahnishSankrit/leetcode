@@ -1,0 +1,17 @@
+    // this is the recurson solution 
+
+    int solve(string &s, int n, int i, string temp){
+        if(i >= n){
+            if(isPali(temp)){
+                return temp.length();
+            }
+            return 0;
+        }
+
+        int take = solve(s, n, i+1, temp + s[i]);
+    }
+        return true;
+
+        }
+        int skip = solve(s, n, i+1, temp);
+
