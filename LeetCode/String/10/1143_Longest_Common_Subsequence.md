@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | October 20, 2026 at 10:14 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-common-subsequence/submissions/2177256364/) |
+| **Submitted** | October 20, 2026 at 10:23 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-common-subsequence/) |
 
 ## Solution
 
 ```unknown
+            skip1 = solveMemo(s1, s2, i, j+1, n, m,dp);
+        else {
         }
-
-        return max(take, max(skip1, skip2));
-            skip2 = solve(s1, s2, i+1, j, n, m); 
-            skip1 =  solve(s1, s2, i, j+1, n, m);
-        }else{
-            take = 1 +  solve(s1, s2, i+1, j+1, n, m);
+            take = 1  + solveMemo(s1, s2, i+1, j+1, n, m, dp);
         if(s1[i] == s2[j]){
-        int skip2 = 0;
+        int take = 0, skip1 = 0, skip2 =0;
 
-    }
-    int longestCommonSubsequence(string text1, string text2) {
-        int n=text1.size();
-        int m=text2.size();
+        if(dp[i][j]   !=  -1) return dp[i][j];
+    {
+        if(i >= n || j >= m) return 0;
 
-        return solve(text1, text2, 0, 0, n, m);
-    }
+    int solveMemo(string &s1, string &s2, int i, int j, int n, int m , vector<vector<int>> &dp)
+    // this memo approch is also giving me the tle  casue i was passing both the string as the 
+    // lets do the memonization here 
+
+    // }
+    refrence now it is not tle
 
 ```
 
