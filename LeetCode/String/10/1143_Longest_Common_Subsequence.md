@@ -11,30 +11,31 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | October 11, 2026 at 12:29 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-common-subsequence/submissions/2168573915/) |
+| **Submitted** | October 20, 2026 at 10:14 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-common-subsequence/submissions/2177256364/) |
 
 ## Solution
 
 ```unknown
-            solve(text1, text2, n1, n2, i, j+1, temp, maxi);
-            solve(text1, text2, n1, n2, i+1, j, temp, maxi);
-        }else{
-            temp.pop_back();
-            solve(text1, text2, n1, n2, i+1, j+1, temp, maxi);
-            temp.push_back(text1[i]);
-        if(text1[i] == text2[j]){
-        
         }
-            return;
-        if(i == n1 || j == n2){
-        maxi = max(maxi, (int)temp.length());
-    maxi){
-    void solve(string text1, string text2, int n1, int n2, int i, int j, string &temp, int &
-class Solution {
-public:
+
+        return max(take, max(skip1, skip2));
+            skip2 = solve(s1, s2, i+1, j, n, m); 
+            skip1 =  solve(s1, s2, i, j+1, n, m);
+        }else{
+            take = 1 +  solve(s1, s2, i+1, j+1, n, m);
+        if(s1[i] == s2[j]){
+        int skip2 = 0;
+
+    }
+    int longestCommonSubsequence(string text1, string text2) {
+        int n=text1.size();
+        int m=text2.size();
+
+        return solve(text1, text2, 0, 0, n, m);
+    }
 
 ```
 
 ---
-*Auto-synced by LeetCode Git Sync on 2026-10-10*
+*Auto-synced by LeetCode Git Sync on 2026-10-20*
