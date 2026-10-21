@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | October 21, 2026 at 11:42 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) |
+| **Submitted** | October 21, 2026 at 11:56 PM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/submissions/2178255703/) |
 
 ## Solution
 
 ```unknown
-            return 0;
+            take = 2 + solveMemo(s, n, i+1, j-1, dp);
+        if(s[i] == s[j]){
+        int take = 0, skip1 = 0, skip2  = 0;
 
-            }
-                return temp.length();
-            if(isPali(temp)){
-        if(i >= n){
-    int solve(string &s, int n, int i, string temp){
-    // this is the recursion solution which is going to give you the tle;
-    }
-        return true;
+        if(dp[i][j] != -1) return dp[i][j];
 
+        }else{
+            skip1 = solveMemo(s, n , i , j -1, dp);
+            skip2 = solveMemo(s, n, i+1, j, dp);
         }
-            j--;
-            i++;
-            if(s[i] != s[j]) return false;
-        while(i < n){
-        int i=0,j=n-1;
+
+        return dp[i][j] = max(take, max(skip1, skip2));
+    }
+
+
+    int minInsertions(string s) {
+        int n=s.length();
 
 ```
 
