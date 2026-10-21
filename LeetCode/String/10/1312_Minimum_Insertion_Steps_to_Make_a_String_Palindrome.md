@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | October 21, 2026 at 11:56 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/submissions/2178255703/) |
+| **Submitted** | October 22, 2026 at 12:13 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/submissions/2178270858/) |
 
 ## Solution
 
 ```unknown
-            take = 2 + solveMemo(s, n, i+1, j-1, dp);
-        if(s[i] == s[j]){
-        int take = 0, skip1 = 0, skip2  = 0;
+                }else{
+                    skip1 = dp[i][j-1];
+                    take = 2 + dp[i+1][j-1];
+                }else if(s[i] == s[j]){
+                    skip2 = dp[i+1][j];
+                }
+                    dp[i][j] = 1;
 
-        if(dp[i][j] != -1) return dp[i][j];
-
-        }else{
-            skip1 = solveMemo(s, n , i , j -1, dp);
-            skip2 = solveMemo(s, n, i+1, j, dp);
+                dp[i][j] = max(take, max(skip1, skip2));
+            }
         }
 
-        return dp[i][j] = max(take, max(skip1, skip2));
-    }
-
-
-    int minInsertions(string s) {
-        int n=s.length();
+                if(i == j) {
+                int take =0, skip1= 0, skip2=0;
+            for(int j=i; j<n; j++){
+        for(int i=n-1; i>=0; i--){
+                    continue;
 
 ```
 
