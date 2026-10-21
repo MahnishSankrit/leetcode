@@ -1,0 +1,17 @@
+            return 0;
+
+            }
+                return temp.length();
+            if(isPali(temp)){
+        if(i >= n){
+    int solve(string &s, int n, int i, string temp){
+    // this is the recursion solution which is going to give you the tle;
+    }
+        return true;
+
+        }
+            j--;
+            i++;
+            if(s[i] != s[j]) return false;
+        while(i < n){
+        int i=0,j=n-1;
