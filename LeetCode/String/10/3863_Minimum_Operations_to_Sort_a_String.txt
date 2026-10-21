@@ -1,0 +1,16 @@
+        if(s[n-1] == max_el) return 1;
+
+        // check if the min and max are in the middle or not as this case will take 3 steps;
+
+        if(s[0] == min_el) return 1;
+
+        char max_el = *max_element(s.begin(), s.end());
+        char min_el = *min_element(s.begin(), s.end());
+
+        if(is_sorted(s.begin(), s.end())) return 0;
+        int n=s.length();
+    int minOperations(string s) {
+public:
+class Solution {
+        if(n == 2) return  -1;
+        char min_mid = *min_element(s.begin() + 1, s.end()-1);
