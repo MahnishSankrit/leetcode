@@ -1,0 +1,17 @@
+        if(isSorted(nums)) return 0;
+
+        // if(nums[0] != 0) return 0;
+        int k=-1;
+
+        for(int i=0; i<nums.size(); i++){
+            if(nums[i] != i){
+                // k = k & nums[i];
+            }
+        }
+    int sortPermutation(vector<int>& nums) {
+    }
+                if(k == -1){
+                    k=nums[i];
+                }else{
+                    k &= nums[i];
+                }
