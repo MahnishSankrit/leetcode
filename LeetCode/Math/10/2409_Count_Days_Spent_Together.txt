@@ -1,0 +1,14 @@
+        int AliceArrive = stringToInt(arriveAlice);
+        int AliceLeave = stringToInt(leaveAlice);
+        int BobArrive = stringToInt(arriveBob);
+        int BobLeave = stringToInt(leaveBob);
+
+        int val1 = max(AliceArrive, BobArrive);
+        int val2 = min(AliceLeave, BobLeave);
+
+        return max(0, val2 - val1 + 1);
+          
+    }
+};
+        
+    int countDaysTogether(string arriveAlice, string leaveAlice, string arriveBob, string leaveBob) {
