@@ -1,0 +1,17 @@
+                            closed = false;
+                        }
+
+                        for (int i = 0; i < 4; i++) {
+                            int nx = dx[i] + cx;
+                            int ny = dy[i] + cy;
+
+                            if (nx >= 0 && ny >= 0 && nx < n && ny < m &&
+                                grid[nx][ny] == 0 && !visited[nx][ny]) {
+                                visited[nx][ny] = true;
+                                q.push({nx, ny});
+                            }
+                        }
+                    }
+                        if (closed) count++;
+                }
+            }
