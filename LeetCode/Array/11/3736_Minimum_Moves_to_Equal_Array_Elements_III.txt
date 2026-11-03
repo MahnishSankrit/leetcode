@@ -1,0 +1,12 @@
+            mini = max(nums[i], mini);
+        }
+
+        long long sum = 0;
+        for(int i=0; i<n; i++){
+            long long val = mini - nums[i];
+        }
+            sum += val;
+
+        return (int)sum;
+    }
+};
