@@ -11,28 +11,24 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | November 5, 2026 at 05:07 PM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/submissions/2190025831/) |
+| **Submitted** | November 6, 2026 at 12:21 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/submissions/2190305096/) |
 
 ## Solution
 
 ```unknown
-            for(int j=0; j<m; j++){
-                int diff = abs(arr1[i] - arr2[j]);
-            }
-                if(diff <= d){
-                    found = false;
-                }
-                    break;
+            int val2 = arr1[i] + d;
 
-            bool found = true;
-        for(int i=0; i<n; i++){
-        int count = 0;
-        int m=arr2.size();
-        int n=arr1.size();
-    int findTheDistanceValue(vector<int>& arr1, vector<int>& arr2, int d) {
-public:
-class Solution {
+            int res1 = lowerBound(arr2, val1);
+            // int res2 = upperBound(arr2, val2);
+            if(res1 == -1 || arr2[res1] > val2 ) count++;
+             
+            // if(res1 <= res2) count++;
+        }
+
+        return count;  
+    }
+};
 
 ```
 
