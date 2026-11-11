@@ -1,0 +1,16 @@
+        val1 = 1LL * cost1 * costBoth;
+        val2 = 1LL * cost2 * costBoth;
+        long long common = min(need1, need2);
+        long long res = common * costBoth + (need1 - common) * cost1 + (need2 - common) * cost2;
+
+        mini = min(mini, val1 + val2);
+
+        // CASE 1 WHEN BOTH TYPES ARE CALCULATING
+
+        long long val2 = 1LL * cost2 * need2;
+        // CASE 2 WHEN ONLY THE THIRD TYPE IS TAKING  for both the type 1 and 2
+        mini = min(mini, res);
+        //case 3 when type is taking 
+        mini = min(mini, 1LL * max(need1, need2) * costBoth);
+
+        return mini;
