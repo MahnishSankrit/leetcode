@@ -11,27 +11,27 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | November 13, 2026 at 04:00 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/submissions/2194934060/) |
+| **Submitted** | November 13, 2026 at 04:15 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/submissions/2194937614/) |
 
 ## Solution
 
 ```unknown
-        for(int i=0; i<n; i++){
+       len = 1;
+       while(j < n){
+        if(nums[j] < nums[j-1]){
+            len = j - i +1;
+        }else{
+            i= j;
+       j=1;
+        i=0;
 
         }
-                else break;
-            }
-                count = max(count, len+1);
-                if(nums[j] > nums[j-1]) len++;
-            int len = 0;
-            for(int j=i+1; j<n; j++){
-                if(nums[j] < nums[j-1]) len++;
-                else break;
-            for(int j=i+1; j<n; j++){
-            }
-            count = max(count, len+1);
+            len = 1;
         }
+        count = max(count, len);
+        j++;
+       }
         return count;
     }
 
