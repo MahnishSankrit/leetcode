@@ -11,29 +11,29 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | November 13, 2026 at 03:55 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/submissions/2194933005/) |
+| **Submitted** | November 13, 2026 at 04:00 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/submissions/2194934060/) |
 
 ## Solution
 
 ```unknown
         for(int i=0; i<n; i++){
-            for(int j=i; j<n; j++){
-                vector<int> ans;
-                for(int k=i+1; k<=j; k++){
-                    if(nums[k] < nums[k-1]){
-                        ans.push_back(nums[k]);
-                    }else{
-                }
+
+        }
+                else break;
             }
-                        break;
-                    }
+                count = max(count, len+1);
+                if(nums[j] > nums[j-1]) len++;
+            int len = 0;
+            for(int j=i+1; j<n; j++){
+                if(nums[j] < nums[j-1]) len++;
+                else break;
+            for(int j=i+1; j<n; j++){
+            }
+            count = max(count, len+1);
         }
         return count;
     }
-                int val = ans.size() + 1;
-                count = max(count, val);
-};
 
 ```
 
