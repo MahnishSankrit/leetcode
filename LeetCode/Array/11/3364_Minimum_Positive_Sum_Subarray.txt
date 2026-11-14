@@ -1,0 +1,14 @@
+        // int res2 = INT_MAX;
+        // for(int i=0; i<n; i++){
+        //     int sum = 0;
+        //     for(int j=i; j<n; j++){
+        //         sum += nums[j];
+        //         if(sum > 0 && j - i + 1 == r){
+        //             res1 = min(res1, sum);
+        //         }
+        //     }
+        // } 
+        if(res1 == INT_MAX) return -1;
+        return res1;
+    }
+};
