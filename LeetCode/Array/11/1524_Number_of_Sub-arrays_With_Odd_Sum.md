@@ -11,28 +11,24 @@
 | **Language** | Unknown |
 | **Runtime** | N/A |
 | **Memory** | N/A |
-| **Submitted** | November 16, 2026 at 12:07 AM |
-| **Link** | [View on LeetCode](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/submissions/2196836836/) |
+| **Submitted** | November 16, 2026 at 12:33 AM |
+| **Link** | [View on LeetCode](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/submissions/2196850360/) |
 
 ## Solution
 
 ```unknown
-        //         if(add % 2 != 0) count++;
-        //         add += arr[l];
-        //     for(int l=k; l<n; l++){
-        // for(int k=0; k<n; k++){
-        //     int add  =0 ;
-        int count = 0;
+                even++;
+                count += odd;
+            }else{
+                count += even;
+                odd++;
+            }
+            i++;
+        }
 
-        int sum = 0;
-        int j=0;
-        int i=0; 
-        int n=arr.size();
-    int numOfSubarrays(vector<int>& arr) {
-
-    const int mod = 1e9;
-public:
-class Solution {
+        return count % mod;
+    }
+};
 
 ```
 
