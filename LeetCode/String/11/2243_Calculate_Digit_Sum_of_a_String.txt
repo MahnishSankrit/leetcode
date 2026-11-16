@@ -1,0 +1,17 @@
+            i++;
+            }
+                j = i + 1;
+                sum =0;
+        }
+        if(j < n){
+        return temp;
+    }
+    string solve(string s, int k){
+        if(s.length() <= k){
+            return s;
+                temp += to_string(sum);
+            if(i - j + 1 == k){
+            sum += s[i] - '0';
+        while(i < n){
+            temp += to_string(sum);
+        }
