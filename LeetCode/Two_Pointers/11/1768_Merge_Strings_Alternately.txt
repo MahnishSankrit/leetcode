@@ -1,0 +1,17 @@
+                flag = !flag;
+            }else{
+                i++;
+                temp += word1[i];
+            if(flag){
+            if(i >= n1 || j >= n2) break;
+       while(k < n1 + n2){
+        int k =0;
+        bool flag = true;
+       int j= 0;
+                temp += word2[j];
+                j++;
+                flag = !flag;
+            }
+            k++;
+       }
+
