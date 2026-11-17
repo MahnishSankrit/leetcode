@@ -1,0 +1,16 @@
+                j--;
+            if(isVowel(s[i]) && !isVowel(s[j])){
+        while(i < j){
+        
+        int j=n-1;
+            }
+            //     i++;
+            // }
+                swap(s[i], s[j]);
+                i++;
+                j--;
+            }else{
+            else if(isVowel(s[i]) && isVowel(s[j])){
+            // else if(isVowel(s[i]) == false && isVowel(s[j]) == true){
+                i++;
+            }
