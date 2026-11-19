@@ -1,0 +1,16 @@
+        for(int i=1; i<n; i++){  
+            if(prev != chars[i]){
+                s+=prev;
+                if(count > 1) s+= to_string(count);
+                count = 1;
+                prev=chars[i];
+            }else{
+            count++;
+            }
+        }
+        s += prev;
+       if(count > 1) s+= to_string(count); 
+
+       for(int i=0; i<s.length(); i++){
+            chars[i] = s[i];
+       }
