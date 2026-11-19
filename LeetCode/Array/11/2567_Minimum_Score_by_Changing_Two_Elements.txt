@@ -1,0 +1,16 @@
+public:
+    int minimizeSum(vector<int>& nums) {
+        int n=nums.size();
+
+
+        sort(nums.begin(), nums.end());
+
+class Solution {
+     // case 1 make nums[0] = nums[1] and nums[n-1] = nums[n-2];
+        int case1 = abs(nums[1] - nums[n-2]);
+        //case 2 make nums[0] = nums[2] and nums[1]  = nums[2];
+        int case2 = abs(nums[2] - nums[n-1]);
+        // case 3 make nums[n-1]  =nums[n-3] and nums[n-2] = nums[n-3];
+        int case3 =abs(nums[n-3] - nums[0]);
+
+        return min(min(case1, case2) , case3);
