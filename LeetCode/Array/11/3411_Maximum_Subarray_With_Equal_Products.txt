@@ -1,0 +1,16 @@
+        }
+            ans = (ans * arr[k]) / std::gcd(ans, arr[k]);
+    long long lcm(int i, int j, vector<int>& arr) {
+        long long ans = arr[i];
+
+        for (int k = i + 1; k <= j; k++) {
+        return val;
+    }
+            val = 1LL * val * nums[k];
+        }
+        for (int k = i; k <= j; k++) {
+        long long val = 1;
+    long long prod(int i, int j, vector<int>& nums) {
+public:
+class Solution {
+ // logiclly correct but need to optimize and make it working 
